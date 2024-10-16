@@ -1,78 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-          background-color: white;
-          color: #333;
-        }
-        
-        header {
-          background-color: pink;
-          color: white;
-          text-align: center;
-          padding: 50px;
-        }
-        
-        .search-section {
-          background-color: #f9f1f7;
-          padding: 20px;
-          text-align: center;
-        }
-        
-        .search-section h2 {
-          color: pink;
-        }
-        
-        input[type="text"] {
-          padding: 10px;
-          width: 60%;
-          margin-right: 10px;
-          border: 2px solid lightpink;
-          border-radius: 5px;
-        }
-        
-        button {
-          padding: 10px 20px;
-          background-color: pink;
-          border: none;
-          color: white;
-          cursor: pointer;
-          border-radius: 5px;
-        }
-        
-        button:hover {
-          background-color: #ff4d88;
-        }
-        
-        .description, .vehicles, .featured-destinations {
-          padding: 20px;
-          margin: 20px;
-        }
-        
-        .vehicle-grid, .destination-grid {
-          display: flex;
-          gap: 20px;
-        }
-        
-        .vehicle, .destination {
-          border: 2px solid lightpink;
-          border-radius: 5px;
-          padding: 15px;
-          text-align: center;
-          width: 200px;
-        }
-        
-        .vehicle img {
-          width: 100%;
-          height: auto;
-        }
-        
-        footer {
-          background-color: pink;
-          color: white;
-          text-align: center;
-          padding: 20px;
-        }
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #fff;
+  color: #ff749d; /* Pink main color */
+  text-align: center;
+  padding: 20px;
+  border-bottom: 3px solid #ffc4d3; /* Light pink border */
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #ff749d; /* Pink title */
+}
+
+h2 {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #ff749d;
+}
+
+p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+/* Search Section */
+.search-section {
+  background-color: #ffc4d3; /* Light pink background */
+  padding: 20px;
+  text-align: center;
+}
+
+#destinationSearch {
+  padding: 10px;
+  width: 250px;
+  border: 2px solid #ff749d;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff749d;
+  border: none;
+  color: white;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e65384;
+}
+
+/* About Us Section */
+.description {
+  background-color: #fff;
+  color: #333;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.description p {
+  font-size: 1.2em;
+}
+
+/* Vehicle Section */
+.vehicles {
+  background-color: #ffc4d3;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.vehicle-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.vehicle {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.vehicle img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.vehicle p {
+  font-size: 1.2em;
+  color: #333;
+  margin-top: 10px;
+}
+
+.vehicle:hover {
+  transform: translateY(-10px);
+}
+
+/* Trip Pages */
+.trips {
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.trip {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.trip img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.trip:hover {
+  transform: translateY(-10px);
+}
+
+.trip h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #ff749d;
+}
+
+.trip p {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #ff749d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+/* Form Styles */
+form {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #333;
+  font-size: 1.1em;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ff749d;
+  border-radius: 5px;
+}
+
+form button {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ff749d;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #e65384;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .vehicle-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trip {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 /*
