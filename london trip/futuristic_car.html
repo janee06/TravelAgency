@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuristic Car Experience - Themed Travel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Futuristic Car Experience</h1>
+    <p>Explore London in a sleek and modern futuristic car, equipped with the latest technology.</p>
+  </header>
+
+  <section class="trip-detail">
+    <img src="images/futuristic_car.jpg" alt="Futuristic Car" style="max-width: 600px; border-radius: 10px;">
+    <h2>About the Futuristic Car Experience</h2>
+    <p>This 2-hour trip lets you experience the future of travel with a guided tour in a high-tech futuristic car. You will visit iconic locations in London in style.</p>
+    <p><strong>Included:</strong> Tech guide, refreshments, photo stops.</p>
+    <p><strong>Duration:</strong> 2 hours</p>
+    <p><strong>Price:</strong> $300</p>
+
+    <!-- Book Now button with a form -->
+    <form action="booking.html" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="date">Preferred Tour Date:</label>
+      <input type="date" id="date" name="date" required><br><br>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Themed Travel. All rights reserved.</p>
+  </footer>
+</body>
+</html>

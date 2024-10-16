@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic Taxi Tour - Themed Travel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Classic Taxi Tour</h1>
+    <p>Experience London from the back of a classic taxi, reminiscent of a bygone era.</p>
+  </header>
+
+  <section class="trip-detail">
+    <img src="images/classic_taxi.jpg" alt="Classic Taxi" style="max-width: 600px; border-radius: 10px;">
+    <h2>About the Classic Taxi Tour</h2>
+    <p>Step into the world of London’s famous black cabs on this 2.5-hour guided tour of the city’s best-known sights.</p>
+    <p><strong>Included:</strong> Expert driver-guide, historical insights, and refreshments.</p>
+    <p><strong>Duration:</strong> 2.5 hours</p>
+    <p><strong>Price:</strong> $220</p>
+
+    <form action="booking.html" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="date">Preferred Tour Date:</label>
+      <input type="date" id="date" name="date" required><br><br>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Themed Travel. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Confirmation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Thank You for Booking!</h1>
+    <p>Your Vintage Bus Tour in London has been successfully booked.</p>
+  </header>
+
+  <section>
+    <h2>Booking Details</h2>
+    <p>We will send a confirmation email with all the details shortly.</p>
+    <p><strong>Tour Date:</strong> <span id="booking-date"></span></p>
+    <p><strong>Name:</strong> <span id="booking-name"></span></p>
+
+    <p>We look forward to seeing you soon!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Themed Travel. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Assuming the form submission sends the name and date using POST
+    const urlParams = new URLSearchParams(window.location.search);
+    document.getElementById('booking-name').innerText = urlParams.get('name');
+    document.getElementById('booking-date').innerText = urlParams.get('date');
+  </script>
+</body>
+</html>

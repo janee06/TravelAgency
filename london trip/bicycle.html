@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bicycle Adventure - Themed Travel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Bicycle Adventure</h1>
+    <p>Pedal through London's landmarks with an energetic guide.</p>
+  </header>
+
+  <section class="trip-detail">
+    <img src="images/bicycle.jpg" alt="Bicycle" style="max-width: 600px; border-radius: 10px;">
+    <h2>About the Bicycle Adventure</h2>
+    <p>Join a 3-hour guided bike tour through London’s most famous parks and landmarks.</p>
+    <p><strong>Included:</strong> Bike rental, safety gear, guide, refreshments.</p>
+    <p><strong>Duration:</strong> 3 hours</p>
+    <p><strong>Price:</strong> $100</p>
+
+    <form action="booking.html" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="date">Preferred Tour Date:</label>
+      <input type="date" id="date" name="date" required><br><br>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Themed Travel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
