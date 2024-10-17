@@ -10,7 +10,8 @@ function searchDestinations() {
     france: 'france.html',
     japan: 'japan.html',
     australia: 'australia.html',
-    usa: 'usa.html'
+    usa: 'usa.html',
+    italy: 'italy.html'
   };
 
   // Check if the destination exists in the predefined list
