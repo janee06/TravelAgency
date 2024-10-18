@@ -1,0 +1,331 @@
+body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: white;
+          color: #333;
+        }
+        
+        header {
+          background-color: pink;
+          color: white;
+          text-align: center;
+          padding: 50px;
+        }
+        
+        .search-section {
+          background-color: #f9f1f7;
+          padding: 20px;
+          text-align: center;
+        }
+        
+        .search-section h2 {
+          color: pink;
+        }
+        
+        input[type="text"] {
+          padding: 10px;
+          width: 60%;
+          margin-right: 10px;
+          border: 2px solid lightpink;
+          border-radius: 5px;
+        }
+        
+        button {
+          padding: 10px 20px;
+          background-color: pink;
+          border: none;
+          color: white;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+        
+        button:hover {
+          background-color: #ff4d88;
+        }
+        
+        .description, .vehicles, .featured-destinations {
+          padding: 20px;
+          margin: 20px;
+        }
+        
+        .vehicle-grid, .destination-grid {
+          display: flex;
+          gap: 20px;
+        }
+        
+        .vehicle, .destination {
+          border: 2px solid lightpink;
+          border-radius: 5px;
+          padding: 15px;
+          text-align: center;
+          width: 200px;
+        }
+        
+        .vehicle img {
+          width: 100%;
+          height: auto;
+        }
+        
+        footer {
+          background-color: pink;
+          color: white;
+          text-align: center;
+          padding: 20px;
+        }
+        
+        
+        /*
+        London styles
+        */
+        
+        .trip-grid {
+          display: flex;
+          gap: 20px;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin: 20px 0;
+        }
+        
+        .trip {
+          border: 2px solid lightpink;
+          border-radius: 10px;
+          padding: 15px;
+          width: 300px;
+          text-align: center;
+        }
+        
+        .trip img {
+          width: 100%;
+          height: auto;
+          border-radius: 5px;
+        }
+        
+        .trip h3 {
+          color: pink;
+          margin: 10px 0;
+        }
+        
+        .trip p {
+          margin: 10px 0;
+        }
+        
+        button {
+          padding: 10px 20px;
+          background-color: pink;
+          border: none;
+          color: white;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+        
+        button:hover {
+          background-color: #ff4d88;
+        }
+        
+        .trip {
+          border: 2px solid lightpink;
+          border-radius: 10px;
+          padding: 15px;
+          margin-bottom: 20px; /* Add margin between each trip */
+          width: 100%; /* Full width for stacked layout */
+          text-align: center;
+        }
+        
+        .trip img {
+          width: 100%;
+          max-width: 500px; /* Ensure image doesn't get too big */
+          height: auto;
+          border-radius: 5px;
+          margin-bottom: 10px;
+        }
+        
+        .trip h3 {
+          color: pink;
+          margin: 10px 0;
+        }
+        
+        .trip p {
+          margin: 10px 0;
+        }
+        
+        button {
+          padding: 10px 20px;
+          background-color: pink;
+          border: none;
+          color: white;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+        
+        button:hover {
+          background-color: #ff4d88;
+        }
+        
+        /*
+        Trip info styles
+        */
+        form {
+          display: flex;
+          flex-direction: column;
+          max-width: 400px;
+          margin: 20px auto;
+        }
+        
+        input, button {
+          padding: 10px;
+          margin: 10px 0;
+          border-radius: 5px;
+        }
+        
+        input[type="text"], input[type="email"], input[type="date"] {
+          border: 1px solid #ffccd5;
+        }
+        
+        button {
+          background-color: pink;
+          border: none;
+          color: white;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+        
+        button:hover {
+          background-color: #ff4d88;
+        }
+        
+        
+        /*trip info styles*/
+        
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: 'Arial', sans-serif;
+          background-color: #f9f9f9;
+          color: #333;
+          line-height: 1.6;
+          padding: 20px;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        
+        /* Header */
+        header {
+          background-color: #ffe3e6; /* Light Pink */
+          padding: 40px;
+          text-align: center;
+          border-radius: 12px;
+          margin-bottom: 20px;
+        }
+        
+        header h1 {
+          color: #d6336c; /* Pink */
+          font-size: 2.5rem;
+        }
+        
+        header p {
+          font-size: 1.2rem;
+          color: #666;
+        }
+        
+        /* Trip Details Section */
+        .trip-detail {
+          background-color: #fff;
+          padding: 30px;
+          border-radius: 12px;
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+          margin-bottom: 20px;
+        }
+        
+        .trip-detail img {
+          display: block;
+          max-width: 100%;
+          border-radius: 12px;
+          margin-bottom: 20px;
+        }
+        
+        .trip-detail h2 {
+          font-size: 1.8rem;
+          color: #d6336c; /* Pink */
+          margin-bottom: 10px;
+        }
+        
+        .trip-detail p {
+          font-size: 1rem;
+          color: #555;
+          margin-bottom: 15px;
+        }
+        
+        .trip-detail strong {
+          color: #000;
+        }
+        
+        .trip-detail form {
+          margin-top: 20px;
+        }
+        
+        form label {
+          display: block;
+          font-size: 1rem;
+          color: #333;
+          margin-bottom: 5px;
+        }
+        
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="date"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          font-size: 1rem;
+        }
+        
+        form button {
+          background-color: #d6336c; /* Pink */
+          color: white;
+          border: none;
+          padding: 12px 20px;
+          font-size: 1rem;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+        
+        form button:hover {
+          background-color: #c2185b; /* Darker Pink */
+        }
+        
+        /* Footer */
+        footer {
+          text-align: center;
+          margin-top: 30px;
+          padding: 10px;
+          background-color: #ffe3e6; /* Light Pink */
+          border-radius: 12px;
+        }
+        
+        footer p {
+          font-size: 0.9rem;
+          color: #666;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+          header h1 {
+            font-size: 2rem;
+          }
+        
+          .trip-detail {
+            padding: 20px;
+          }
+        
+          .trip-detail h2 {
+            font-size: 1.5rem;
+          }
+        }

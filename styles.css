@@ -52,12 +52,10 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-nav .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--pink);
+.logo img{
+  height: 90px;
+  width: 77px;
 }
-
 nav ul {
   display: flex;
   list-style: none;
