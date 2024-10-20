@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamborghini Roadster Experience - Themed Travel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Lamborghini Roadster Experience</h1>
+    <p>Live the dream in a Lamborghini Roadster on the Amalfi Coast.</p>
+  </header>
+
+  <section class="trip-detail">
+    <img src="italyimages/italy_lamborghiny.jpg" alt="Lamborghini Roadster">
+    <h2>About the Lamborghini Roadster Experience</h2>
+    <p>Take an unforgettable journey along the Amalfi Coast in a Lamborghini Roadster, combining luxury with stunning scenery.</p>
+    <p><strong>Included:</strong> Lamborghini rental, guide, insurance, refreshments.</p>
+    <p><strong>Duration:</strong> 5 hours</p>
+    <p><strong>Price:</strong> €1000</p>
+
+    <form action="../booking.html" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="date">Preferred Tour Date:</label>
+      <input type="date" id="date" name="date" required><br><br>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Themed Travel. All rights reserved.</p>
+  </footer>
+</body>
+</html>

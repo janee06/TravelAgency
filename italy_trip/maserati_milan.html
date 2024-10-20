@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maserati Tour of Milan - Themed Travel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Maserati Tour of Milan</h1>
+    <p>Drive through Milan’s fashion streets in a classic Maserati.</p>
+  </header>
+
+  <section class="trip-detail">
+    <img src="italyimages/italy_maserati.jpg" alt="Maserati Tour of Milan">
+    <h2>About the Maserati Tour of Milan</h2>
+    <p>Experience luxury and style as you drive through the heart of Milan in a classic Maserati.</p>
+    <p><strong>Included:</strong> Maserati rental, fuel, guide, and refreshments.</p>
+    <p><strong>Duration:</strong> 3 hours</p>
+    <p><strong>Price:</strong> €750</p>
+
+    <form action="booking.html" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="date">Preferred Tour Date:</label>
+      <input type="date" id="date" name="date" required><br><br>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Themed Travel. All rights reserved.</p>
+  </footer>
+</body>
+</html>

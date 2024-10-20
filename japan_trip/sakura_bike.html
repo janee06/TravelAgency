@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakura Bike Tour - Themed Travel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sakura Bike Tour</h1>
+    <p>Cycle through the cherry blossoms of Japan’s beautiful parks during sakura season with a local guide.</p>
+  </header>
+
+  <section class="trip-detail">
+    <img src="japanimages/sakura.jpeg" alt="Sakura Bike Tour">
+    <h2>About the Sakura Bike Tour</h2>
+    <p>Enjoy a scenic bike ride through beautiful parks filled with cherry blossoms, guided by a local expert.</p>
+    <p><strong>Price:</strong> ¥12,000</p>
+
+    <form action="booking.html" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="date">Preferred Tour Date:</label>
+      <input type="date" id="date" name="date" required><br><br>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 ROAMIA. All rights reserved.</p>
+  </footer>
+</body>
+</html>

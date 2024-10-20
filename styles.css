@@ -149,52 +149,74 @@ button:hover {
 
 /* Hero section */
 .search-section {
-  background-image: url('images/travel_background.jpg');
+  background-image: url('images/background.jpg'); /* Replace with the correct image path */
   background-size: cover;
   background-position: center;
-  color: rgb(0, 0, 0);
-  text-align: center;
+  background-repeat: no-repeat;
+  height: 800px;
   padding: 100px 20px;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .search-section h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
 .search-section p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 40px;
 }
 
-/* Search form */
-.search-form {
+.search-section .search-form {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-bottom: 40px;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-.search-form input,
-.search-form select {
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 5px;
+.search-section input,
+.search-section button {
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 10px;
   border: none;
 }
 
-.search-form button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: var(--pink);
+.search-section input {
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for inputs */
+}
+
+.search-section button {
+  background-color: #ff6b6b;
   color: white;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 
-.search-form button:hover {
+.search-section button:hover {
   background-color: #ff4a4a;
+}
+
+/* Adding an overlay effect */
+.search-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(78, 78, 78, 0.5); /* Dark overlay behind the text */
+  z-index: 0; /* Ensure the overlay is behind the content */
+}
+
+.search-section h1,
+.search-section p,
+.search-section .search-form {
+  position: relative;
+  z-index: 1; /* Ensure content is above the overlay */
 }
 
 /* About us section */

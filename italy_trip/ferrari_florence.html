@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferrari Florence Tour - Themed Travel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Ferrari Florence Tour</h1>
+    <p>Experience the beauty of Florence in a Ferrari.</p>
+  </header>
+
+  <section class="trip-detail">
+    <img src="italyimages/italy_ferrari.jpg" alt="Ferrari in Florence">
+    <h2>About the Ferrari Florence Tour</h2>
+    <p>Drive a Ferrari through the historic streets of Florence, combining luxury with culture and history.</p>
+    <p><strong>Included:</strong> Ferrari rental, guide, insurance, refreshments.</p>
+    <p><strong>Duration:</strong> 3 hours</p>
+    <p><strong>Price:</strong> €1200</p>
+
+    <form action="../booking.html" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="date">Preferred Tour Date:</label>
+      <input type="date" id="date" name="date" required><br><br>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Themed Travel. All rights reserved.</p>
+  </footer>
+</body>
+</html>

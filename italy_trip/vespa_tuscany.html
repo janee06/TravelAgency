@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vespa Tour in Tuscany - Themed Travel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Vespa Tour in Tuscany</h1>
+    <p>Ride through Tuscany on a classic Vespa.</p>
+  </header>
+
+  <section class="trip-detail">
+    <img src="italyimages/italy_vespa.jpg" alt="Vespa in Tuscany">
+    <h2>About the Vespa Tour in Tuscany</h2>
+    <p>Ride a Vespa through the scenic hills and vineyards of Tuscany, enjoying breathtaking views and hidden gems.</p>
+    <p><strong>Included:</strong> Vespa rental, guide, helmet, refreshments.</p>
+    <p><strong>Duration:</strong> 6 hours</p>
+    <p><strong>Price:</strong> €220</p>
+
+    <form action="../booking.html" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="date">Preferred Tour Date:</label>
+      <input type="date" id="date" name="date" required><br><br>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Themed Travel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
