@@ -348,16 +348,16 @@ button:hover {
   border: 2px solid lightpink;
   border-radius: 10px;
   padding: 15px;
-  margin-bottom: 20px; /* Add margin between each trip */
-  width: 100%; /* Full width for stacked layout */
+  margin-bottom: 20px; 
+  width: 100%; 
   text-align: center;
 }
 
 .trip img {
   width: 100%;
-  max-width: 500px; /* Ensure image doesn't get too big */
-  height: 200px; /* Fixed height for consistency */
-  object-fit: cover; /* Keeps aspect ratio */
+  max-width: 500px; 
+  height: 200px; 
+  object-fit: cover; 
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -430,7 +430,6 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
-  margin-top: 20px;
 }
 
 footer p {
