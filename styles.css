@@ -48,7 +48,7 @@ nav {
   font-family: Roboto;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--main-white);
+  background-color: #ffc4d3;
   padding: 10px 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -68,12 +68,12 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
-  font-size: 1.1rem;
+  color: #ff749d;
+  font-size: 1.5rem;
 }
 
 nav ul li a:hover {
-  color: #ff749d;
+  color: #ffffff;
 }
 
 /* Profile section in navigation */
@@ -150,7 +150,7 @@ button:hover {
 
 /* Hero section */
 .search-section {
-  background-image: url('images/'); 
+  background-image: url('images/sakura.jpeg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -159,9 +159,27 @@ button:hover {
   position: relative;
   text-align: center;
   color: white;
-  display: flex; /* Use flexbox to center content */
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Center items vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay to improve readability */
+  z-index: 0;
+}
+
+.search-section h1,
+.search-section p,
+.search-section .search-form {
+  position: relative;
+  z-index: 1; /* Ensure text is above the overlay */
 }
 
 .search-section h1 {
@@ -191,7 +209,7 @@ button:hover {
 }
 
 .search-section input {
-  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for inputs */
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent background for inputs */
 }
 
 .search-section button {
@@ -202,27 +220,6 @@ button:hover {
 
 .search-section button:hover {
   background-color: #fc5d8d;
-}
-
-
-
-/* Adding an overlay effect */
-.search-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color:lightpink; /* Dark overlay behind the text */
-  z-index: 0; /* Ensure the overlay is behind the content */
-}
-
-.search-section h1,
-.search-section p,
-.search-section .search-form {
-  position: relative;
-  z-index: 1; /* Ensure content is above the overlay */
 }
 
 /* About us section */
@@ -316,11 +313,16 @@ footer p {
 
 .trip img {
   width: 100%;
-  height: 200px; /* Fixed height for uniform size */
-  object-fit: cover; /* Ensures the image maintains its aspect ratio */
+  height: 200px; 
+  object-fit: cover; 
   border-radius: 5px;
 }
-
+.vehicle img{
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 5px;
+}
 .trip h3 {
   color: lightpink;
   margin: 10px 0;
