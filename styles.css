@@ -53,8 +53,8 @@ nav {
 }
 
 .logo img{
-  height: 90px;
-  width: 77px;
+  height: 70%;
+  width: 57px;
 }
 nav ul {
   display: flex;
@@ -269,89 +269,92 @@ footer p {
 /*London styles
 */
 
-        .trip-grid {
-          display: flex;
-          gap: 20px;
-          flex-wrap: wrap;
-          justify-content: center;
-          margin: 20px 0;
-        }
-        
-        .trip {
-          border: 2px solid lightpink;
-          border-radius: 10px;
-          padding: 15px;
-          width: 300px;
-          text-align: center;
-        }
-        
-        .trip img {
-          width: 100%;
-          height: auto;
-          border-radius: 5px;
-        }
-        
-        .trip h3 {
-          color: lightpink;
-          margin: 10px 0;
-        }
-        
-        .trip p {
-          margin: 10px 0;
-        }
-        
-        button {
-          padding: 10px 20px;
-          background-color: pink;
-          border: none;
-          color: white;
-          cursor: pointer;
-          border-radius: 5px;
-        }
-        
-        button:hover {
-          background-color: #ff4d88;
-        }
+/* Trip Grid */
+.trip-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
 
-        .trip {
-          border: 2px solid lightpink;
-          border-radius: 10px;
-          padding: 15px;
-          margin-bottom: 20px; /* Add margin between each trip */
-          width: 100%; /* Full width for stacked layout */
-          text-align: center;
-        }
-        
-        .trip img {
-          width: 100%;
-          max-width: 500px; /* Ensure image doesn't get too big */
-          height: auto;
-          border-radius: 5px;
-          margin-bottom: 10px;
-        }
-        
-        .trip h3 {
-          color: lightpink;
-          margin: 10px 0;
-        }
-        
-        .trip p {
-          margin: 10px 0;
-        }
-        
-        button {
-          padding: 10px 20px;
-          background-color: pink;
-          border: none;
-          color: white;
-          cursor: pointer;
-          border-radius: 5px;
-        }
-        
-        button:hover {
-          background-color: #ff4d88;
-        }
+.trip {
+  border: 2px solid lightpink;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+}
 
+.trip img {
+  width: 100%;
+  height: 200px; /* Fixed height for uniform size */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio */
+  border-radius: 5px;
+}
+
+.trip h3 {
+  color: lightpink;
+  margin: 10px 0;
+}
+
+.trip p {
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: pink;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ff4d88;
+}
+
+/* Stacked Layout */
+.trip {
+  border: 2px solid lightpink;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px; /* Add margin between each trip */
+  width: 100%; /* Full width for stacked layout */
+  text-align: center;
+}
+
+.trip img {
+  width: 100%;
+  max-width: 500px; /* Ensure image doesn't get too big */
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover; /* Keeps aspect ratio */
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.trip h3 {
+  color: lightpink;
+  margin: 10px 0;
+}
+
+.trip p {
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: pink;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ff4d88;
+}
 
 /* Trip Pages */
 .trips {
@@ -371,7 +374,9 @@ footer p {
 }
 
 .trip img {
-  max-width: 100%;
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
   border-radius: 10px;
 }
 

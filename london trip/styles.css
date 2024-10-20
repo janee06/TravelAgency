@@ -161,6 +161,18 @@ button {
 button:hover {
   background-color: #ff4d88;
 }
+.trip-detail {
+  text-align: center; /* Centers the content within the section */
+}
+
+.trip-detail img {
+  max-width: 600px; /* Restrict the maximum width */
+  height: 300px; /* Fixed height for uniformity */
+  object-fit: cover; /* Maintains aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  display: block; /* Ensures the margin auto works */
+  margin: 0 auto 20px auto; /* Centers the image horizontally and adds bottom margin */
+}
 
 /*
 Trip info styles
